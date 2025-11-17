@@ -1,0 +1,105 @@
+{
+    "optuna":{
+        "opt_n_trials" : 5,
+        "opt_n_cores" : 1,
+        "monitor_metric" : "val_auroc",
+        "opt_direction" : "maximize" ,
+        "sampler" : "random",
+        "pruning" : false
+    },
+
+    "fixed_hyperparameters" : {
+        "max_epochs": 20,
+        "neighborhood_head": true,
+        "structure_head": true,
+        "position_head": true,
+        "seed": 3,
+        "node_embed_size": 128,
+        "hawkes_epochs": 35,
+        "hawkes_seq_embedding_aggregation": "sum",
+        "n_processes": 20,
+        "freeze_node_embeds":false,
+        "n_hawkes_process_sequences": 5,
+        "hawkes_process_sequence_len": 10, 
+        "hawkes_learning_rate" : 0.01, 
+        "hawkes_decay_rate": 0.7,
+        "hawkes_global_negative_pool_size": 150,
+        "max_sample_anchor_patches_structure": 120,
+        "structure_anchor_patch_radius": 2,
+	"auto_lr_find": false   
+    },
+
+    "optuna_hyperparameters": {
+        "batch_size" :{
+            "type" : "suggest_categorical",
+            "args" : [[ 64, 128]]
+        },
+        "n_layers": {
+            "type" : "suggest_int",
+            "args" : [1,2]
+        },
+        "neigh_sample_global_size" : {
+            "type" : "suggest_int",
+            "args" : [1,2]
+        },
+        "n_anchor_patches_pos_in": {
+            "type" : "suggest_int",
+            "args" : [30,80]
+        },
+        "n_anchor_patches_pos_out": {
+            "type" : "suggest_int",
+            "args" : [50,250]
+        }, 
+        "n_anchor_patches_N_in": {
+            "type" : "suggest_int",
+            "args" : [10,25]
+        }, 
+        "n_anchor_patches_N_out": {
+            "type" : "suggest_int",
+            "args" : [30,80]
+        }, 
+        "n_anchor_patches_structure": {
+            "type" : "suggest_int",
+            "args" : [20,50]
+        },   
+        "dropout_rate" : {
+            "type" : "suggest_float",
+            "args" : [0.1, 0.4]
+        },
+        "cc_aggregator":{
+            "type" : "suggest_categorical",
+            "args" : [[ "sum","max"] ]
+        },
+        "min_lr":{
+            "type" : "suggest_float",
+            "args" : [1e-6, 1e-3]
+        },
+        "max_lr":{
+            "type" : "suggest_float",
+            "args" : [1e-2, 1]
+        },
+        "learning_rate" :{
+            "type" : "suggest_float",
+            "args" : [1e-4, 1e-3],
+            "kwargs" : {"log":true}
+        },
+        "neigh_head_decay_rate":{
+            "type" : "suggest_float",
+            "args" : [0.01, 0.5]
+        },
+	"grad_clip" : {
+            "type" : "suggest_float",
+            "args" : [0.1, 0.5]
+        },
+        "pos_head_decay_rate":{
+            "type" : "suggest_float",
+            "args" : [0.01, 0.5]
+        },
+        "pos_head_scaling_factor":{
+            "type" : "suggest_float",
+            "args" : [0.1, 50.0]
+        }
+
+    }
+
+}
