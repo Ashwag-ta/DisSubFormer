@@ -13,6 +13,7 @@ To use DisSubFormer, follow these steps:
 Install the Environment:
 We provide a .yml file that includes all the required packages for training DisSubFormer. After installing Conda, you can create the environment using the following command:
 
+```bash
 conda env create --file DisSubFormer_env.yml
 
 
@@ -30,11 +31,13 @@ We provide two options for training DisSubFormer:
 
 1- To train with Optuna hyperparameter optimization, run the following command:
 
+```bash
 python train_optuna_model.py --train_config_file train_config_optuna.json
 
 
 2-  To train without Optuna, using fixed hyperparameters, run the following command:
 
+```bash
 python train_fixed_model.py --train_config_file train_config_fixed.json
 
 
