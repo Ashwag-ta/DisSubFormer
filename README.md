@@ -82,6 +82,7 @@ Stores disease-specific subgraphs derived from disease-gene associations. Each s
 Includes precomputed files such as adjacency matrices and similarity scores that support anchor patch sampling and multi-head attention computations used during DisSubFormer training.
 
 Download the complete processed dataset from the following link: 
+[Dropbox – DisSubFormer processed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0)
 
 After downloading, place all processed files under: Data_Results/Data/
 
