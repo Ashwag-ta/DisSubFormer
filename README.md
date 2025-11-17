@@ -1,7 +1,7 @@
 Repository for DisSubFormer: A Subgraph Transformer Model for Disease Subgraph Representation and Comorbidity Prediction
 
 Authors: Ashwag Altayyar and Li Liao
-
+```text
 To use DisSubFormer, follow these steps:
 * Install the environment
 * Prepare DisSubFormer input data
@@ -16,7 +16,7 @@ We provide a .yml file that includes all the required packages for training DisS
 ```bash
 conda env create --file DisSubFormer_env.yml
 
-
+```text
 Prepare DisSubFormer Input Data:
 * Download the provided datasets to prepare the input data for DisSubFormer.
 * Set PROJECT_ROOT in main_config.py to the path where the data is downloaded.
@@ -34,13 +34,13 @@ We provide two options for training DisSubFormer:
 ```bash
 python train_optuna_model.py --train_config_file train_config_optuna.json
 
-
+```text
 2-  To train without Optuna, using fixed hyperparameters, run the following command:
 
 ```bash
 python train_fixed_model.py --train_config_file train_config_fixed.json
 
-
+```text
 3- During training, model checkpoint files for all epochs will be saved in the Train_Results directory. After training, the best model based on validation set performance will be selected, evaluated on the test data using a single random seed, and the evaluation results will be saved in the test_results.json file inside the Train_Results directory.
 
 
