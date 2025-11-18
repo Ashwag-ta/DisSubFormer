@@ -9,17 +9,20 @@ To use DisSubFormer, follow these steps:
 * Modify PROJECT_ROOT in main_config.py
 * Train and evaluate DisSubFormer
 
+
 # Install the Environment
 We provide a .yml file that includes all the required packages for training DisSubFormer. After installing Conda, you can create the environment using the following command:
 ```bash
 conda env create --file DisSubFormer_env.yml
 ```
 
+
 # Prepare DisSubFormer Input Data
 * Download the provided datasets to prepare the input data for DisSubFormer.
 * Set PROJECT_ROOT in main_config.py to the path where the data is downloaded.
   
 Note: The input data for DisSubFormer has already been prepared in the Data_Results directory. We have provided the node embeddings and other files, including precomputed graph matrices, required for sampling biologically informed anchor patches and for computing the head-specific relational terms necessary for training.
+
 
 # Train DisSubFormer
 We provide two options for training DisSubFormer:
@@ -35,6 +38,7 @@ python train_fixed_model.py --train_config_file train_config_fixed.json
 ```
 
 3- During training, model checkpoint files for all epochs will be saved in the Train_Results directory. After training, the best model based on validation set performance will be selected, evaluated on the test data using a single random seed, and the evaluation results will be saved in the test_results.json file inside the Train_Results directory.
+
 
 # Evaluate DisSubFormer
 To test the trained DisSubFormer model using multiple random seed runs:
@@ -52,7 +56,6 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 * Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
   
 Note: We provide the checkpoint_model.ckpt and hyperparameters.json files for the best model, saved in the Test_Resources directory, to ensure reproducibility when testing the model.
-
 
 
 # Data
