@@ -12,23 +12,21 @@ To use DisSubFormer, follow these steps:
 
 
 
-Install the Environment:
+# Install the Environment
 We provide a .yml file that includes all the required packages for training DisSubFormer. After installing Conda, you can create the environment using the following command:
 
 ```bash
 conda env create --file DisSubFormer_env.yml
 ```
 
-Prepare DisSubFormer Input Data:
+# Prepare DisSubFormer Input Data
 * Download the provided datasets to prepare the input data for DisSubFormer.
 * Set PROJECT_ROOT in main_config.py to the path where the data is downloaded.
 
 
 Note: The input data for DisSubFormer has already been prepared in the Data_Results directory. We have provided the node embeddings and other files, including precomputed graph matrices, required for sampling biologically informed anchor patches and for computing the head-specific relational terms necessary for training.
 
-
-
-Train DisSubFormer:
+# Train DisSubFormer
 We provide two options for training DisSubFormer:
 
 1- To train with Optuna hyperparameter optimization, run the following command:
@@ -47,7 +45,7 @@ python train_fixed_model.py --train_config_file train_config_fixed.json
 
 
 
-Evaluate DisSubFormer:
+# Evaluate DisSubFormer
 To test the trained DisSubFormer model using multiple random seed runs:
 
 1- Save the checkpoint_model.ckpt and hyperparameters.json files for the best model from the Train_Results directory to the initialized Test_Resources directory.
@@ -67,7 +65,7 @@ Note: We provide the checkpoint_model.ckpt and hyperparameters.json files for th
 
 
 
-Data:
+# Data
 1- Processed Data (download from Dropbox):
 These are the files used directly by DisSubFormer during training/testing:
 * DDI_RR0.txt
