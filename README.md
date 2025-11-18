@@ -24,10 +24,12 @@ Note: The input data for DisSubFormer has already been prepared in the Data_Resu
 # Train DisSubFormer
 We provide two options for training DisSubFormer:
 
+
 1- To train with Optuna hyperparameter optimization, run the following command:
 ```bash
 python train_optuna_model.py --train_config_file train_config_optuna.json
 ```
+
 
 2-  To train without Optuna, using fixed hyperparameters, run the following command:
 ```bash
