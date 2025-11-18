@@ -23,23 +23,29 @@ Note: The input data for DisSubFormer has already been prepared in the Data_Resu
 
 # Train DisSubFormer
 We provide two options for training DisSubFormer:
+
 1- To train with Optuna hyperparameter optimization, run the following command:
 ```bash
 python train_optuna_model.py --train_config_file train_config_optuna.json
 ```
+
 2-  To train without Optuna, using fixed hyperparameters, run the following command:
 ```bash
 python train_fixed_model.py --train_config_file train_config_fixed.json
 ```
+
 3- During training, model checkpoint files for all epochs will be saved in the Train_Results directory. After training, the best model based on validation set performance will be selected, evaluated on the test data using a single random seed, and the evaluation results will be saved in the test_results.json file inside the Train_Results directory.
 
 # Evaluate DisSubFormer
 To test the trained DisSubFormer model using multiple random seed runs:
+
 1- Save the checkpoint_model.ckpt and hyperparameters.json files for the best model from the Train_Results directory to the initialized Test_Resources directory.
+
 2- Run the following command:
 ```bash
 python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyperparameters.json
 ```
+
 3- The evaluation results will be saved in the Test_Results directory and will include:
 * The test results of each random run and the mean results across all seed runs, saved in the final_test_results.json file.
 * The ROC and PR curves for each individual seed run.
@@ -72,7 +78,6 @@ After downloading, place all processed files under: Data_Results/Data/
 
 2- Raw Data Sources (included in GitHub):
 Raw datasets used to generate the processed files are stored in: Data_Results/Data/raw_data/
-
 These include:
 * Disease–gene associations
 * PPI interactions
