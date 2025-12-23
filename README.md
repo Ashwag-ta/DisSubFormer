@@ -20,7 +20,15 @@ conda env create --file DisSubFormer_env.yml
 # Prepare DisSubFormer Input Data
 * Download the provided datasets to prepare the input data for DisSubFormer.
 * Set PROJECT_ROOT in main_config.py to the path where the data is downloaded.
-  
+* Precompute graph metrics needed for anchor patch sampling and multi-head attention computations:
+```bash
+python precompute_graph_metrics.py
+```
+* Generate node embeddings:
+```bash
+python train_PPI_GO_FS.py
+```
+
 Note: The input data for DisSubFormer has already been prepared in the Data_Results directory. We have provided the node embeddings and other files, including precomputed graph matrices, required for sampling biologically informed anchor patches and for computing the head-specific relational terms necessary for training.
 
 
