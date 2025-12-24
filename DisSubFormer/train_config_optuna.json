@@ -1,5 +1,4 @@
 {
-	
     "optuna":{
         "opt_n_trials" : 5,
         "opt_n_cores" : 1,
