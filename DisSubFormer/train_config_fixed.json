@@ -1,5 +1,4 @@
 {
-	
     "fixed_hyperparameters": {
         "max_epochs": 20,
 	"monitor_metric" : "val_auroc",
@@ -36,4 +35,5 @@
         "pos_head_scaling_factor": 2.909853228891788
     }
 }
+
 
