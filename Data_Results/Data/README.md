@@ -1,5 +1,5 @@
 # DisSubFormer Data
-The DisSubFormer data are provided in two forms:
+The data are provided in two forms:
 
 ---
 
