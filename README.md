@@ -4,9 +4,9 @@ Repository for DisSubFormer: A Subgraph Transformer Model for Disease Subgraph R
 Authors: Ashwag Altayyar and Li Liao
 
 To use DisSubFormer, follow these steps:
-* Install the environment
-* Prepare DisSubFormer input data
-* Train and evaluate DisSubFormer
+- Install the environment
+- Prepare DisSubFormer input data
+- Train and evaluate DisSubFormer
 
 
 ## Install the Environment
@@ -54,7 +54,7 @@ To test the trained DisSubFormer model using multiple random seed runs:
 
 2. Run the following command:
 ```bash
-python test_model.py --model_file `checkpoint_model.ckpt` --test_config_file `hyperparameters.json`
+python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyperparameters.json
 ```
 
 3. The evaluation results will be saved in the `Test_Results` directory and will include:
