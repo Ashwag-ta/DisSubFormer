@@ -16,10 +16,10 @@ conda env create --file DisSubFormer_env.yml
 ```
 
 ## Prepare DisSubFormer Input Data
-* Download the preprocessed data from [Dropbox – DisSubFormer preprocessed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0) and place the contents under `Data_Results/Data/`.  
+- Download the preprocessed data from [Dropbox – DisSubFormer preprocessed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0) and place the contents under `Data_Results/Data/`.  
   See the [Data README](Data_Results/Data/README.md) for details about preprocessed and raw data.
-* Set `PROJECT_ROOT` in `main_config.py` to your local `Data_Results` path.
-* (Optional) Precompute graph metrics needed for anchor patch sampling and multi-head attention computations:
+- Set `PROJECT_ROOT` in `main_config.py` to your local `Data_Results` path.
+- (Optional) Precompute graph metrics needed for anchor patch sampling and multi-head attention computations:
 ```bash
 python precompute_graph_metrics.py
 ```
@@ -60,7 +60,7 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 3. The evaluation results will be saved in the `Test_Results` directory and will include:
 - The test results of each random run and the mean results across all seed runs, saved in the `final_test_results.json` file.
 - The ROC and PR curves for each individual seed run.
-* Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
+- Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
   
 **Note:** We provide the `checkpoint_model.ckpt` and `hyperparameters.json` files for the best model, saved in the `Test_Resources` directory, to ensure reproducibility when testing the model.
 
