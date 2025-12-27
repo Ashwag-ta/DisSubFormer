@@ -1,5 +1,5 @@
 # DisSubFormer Data Preparation
-This directory documents the datasets used in **DisSubFormer**.  
+This directory documents the data used in DisSubFormer.  
 The data are divided into two categories:
 
 ---
@@ -8,7 +8,7 @@ The data are divided into two categories:
 These files are **directly used by DisSubFormer** during training and testing.
 They have been preprocessed by the authors and include graph structures, embeddings, and precomputed graph matrices required for biologically informed anchor patch sampling and multi-head attention.
 
-**Download the complete preprocessed dataset from:**
+**Download the preprocessed data from:**
 [Dropbox – DisSubFormer preprocessed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0)
 
 After downloading, place all files directly under:
@@ -17,7 +17,9 @@ After downloading, place all files directly under:
 Data_Results/Data/
 ```
 
-### Included preprocessed Files
+**Note:** The Dropbox package already includes the precomputed graph metrics and protein node embeddings required to run DisSubFormer.
+
+### Included Preprocessed Files
 
 * DDI_RR0.txt
 Contains a list of comorbid disease pairs in edge list format. Each line represents a pair of diseases identified as comorbid based on a relative risk (RR) score greater than 0.
