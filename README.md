@@ -23,12 +23,12 @@ conda env create --file DisSubFormer_env.yml
 ```bash
 python precompute_graph_metrics.py
 ```
-* (Optional) Generate node embeddings:
+* (Optional) Generate protein node embeddings:
 ```bash
 python train_PPI_GO_FS.py
 ```
 
-**Note:** The Dropbox package already includes the precomputed graph metrics and node embeddings required to run DisSubFormer.
+**Note:** The Dropbox package already includes the precomputed graph metrics and protein node embeddings required to run DisSubFormer.
 
 
 # Train DisSubFormer
