@@ -46,7 +46,7 @@ Includes precomputed files such as adjacency matrices and similarity scores that
 ## 2- Raw Data (Reference Only)
 Raw data used to generate the preprocessed data are provided for reference, transparency, and reproducibility and are stored in: `Data_Results/Data/raw_data/`.
 
-### Included Raw Data Sources
+### Included Raw Data
 * Disease–gene associations
 * PPI interactions
 * Gene ID mapping
