@@ -4,8 +4,8 @@ The DisSubFormer data are provided in two forms:
 ---
 
 ## 1- Preprocessed Data (Required)
-This preprocessed data is used by DisSubFormer during training and testing.
-It has been preprocessed by the authors and includes graph structures, embeddings, and precomputed graph matrices required for biologically informed anchor patch sampling and multi-head attention.
+The preprocessed data are used by DisSubFormer during training and testing.
+They were prepared by the authors and include graph structures, embeddings, and precomputed graph matrices required for biologically informed anchor patch sampling and multi-head attention.
 
 **Download the preprocessed data from:**
 [Dropbox – DisSubFormer preprocessed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0)
