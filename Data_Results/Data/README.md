@@ -1,6 +1,5 @@
-# DisSubFormer Data Preparation
-This directory documents the data used in DisSubFormer.  
-The data are divided into two categories:
+# DisSubFormer Data
+The data used in DisSubFormer are divided into two categories:
 
 ---
 
