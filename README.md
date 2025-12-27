@@ -44,13 +44,13 @@ python train_optuna_model.py --train_config_file train_config_optuna.json
 python train_fixed_model.py --train_config_file train_config_fixed.json
 ```
 
-3. During training, model checkpoint files for all epochs will be saved in the `Train_Results` directory. After training, the best model based on validation set performance will be selected, evaluated on the test data using a single random seed, and the evaluation results will be saved in the test_results.json file inside the `Train_Results` directory.
+3. During training, model checkpoint files for all epochs will be saved in the `Train_Results` directory. After training, the best model based on validation set performance will be selected, evaluated on the test data using a single random seed, and the evaluation results will be saved in the `test_results.json` file inside the `Train_Results` directory.
 
 
 ## Evaluate DisSubFormer
 To test the trained DisSubFormer model using multiple random seed runs:
 
-1. Save the `checkpoint_model.ckpt` and hyperparameters.json files for the best model from the `Train_Results` directory to the initialized `Test_Resources` directory.
+1. Save the `checkpoint_model.ckpt` and `hyperparameters.json` files for the best model from the `Train_Results` directory to the initialized `Test_Resources` directory.
 
 2. Run the following command:
 ```bash
@@ -58,7 +58,7 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 ```
 
 3. The evaluation results will be saved in the `Test_Results` directory and will include:
-* The test results of each random run and the mean results across all seed runs, saved in the final_test_results.json file.
+* The test results of each random run and the mean results across all seed runs, saved in the `final_test_results.json` file.
 * The ROC and PR curves for each individual seed run.
 * Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
   
