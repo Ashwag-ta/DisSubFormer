@@ -19,21 +19,27 @@ Data_Results/Data/
 ### Included Preprocessed Data
 
 * DDI_RR0.txt
+  
 Contains a list of comorbid disease pairs in edge list format. Each line represents a pair of diseases identified as comorbid based on a relative risk (RR) score greater than 0.
 
 * PPI.txt
+  
 Represents the Protein-Protein Interaction (PPI) network as an undirected edge list. Each line specifies an interaction between two proteins.
 
 * GO_FS.txt
+  
 Encodes a protein similarity graph constructed from Gene Ontology (GO)-based functional similarity. Edges connect protein pairs with functional similarity scores greater than 0.5, indicating the edge weights.
 
 * GO_FS_node_features_ANC2VEC.csv
+  
 Provides precomputed node features for the GO_FS graph. Each row contains a gene ID and its corresponding embedding derived from GO annotations of the protein product encoded by that gene using the ANC2VEC method.
 
 * Subgraphs.pth
+  
 Stores disease-specific subgraphs derived from disease-gene associations. Each subgraph represents one of 299 diseases including the set of associated genes.
 
 * Additional data
+  
 Includes precomputed files such as adjacency matrices and similarity scores that support anchor patch sampling and multi-head attention computations used during DisSubFormer training and testing.
 
 
