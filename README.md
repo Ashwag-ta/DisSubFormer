@@ -39,7 +39,7 @@ We provide two options for training DisSubFormer:
 python train_optuna_model.py --train_config_file train_config_optuna.json
 ```
 
-2.  To train without Optuna, using fixed hyperparameters, run the following command:
+2. To train without Optuna, using fixed hyperparameters, run the following command:
 ```bash
 python train_fixed_model.py --train_config_file train_config_fixed.json
 ```
@@ -58,8 +58,8 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 ```
 
 3. The evaluation results will be saved in the `Test_Results` directory and will include:
-* The test results of each random run and the mean results across all seed runs, saved in the `final_test_results.json` file.
-* The ROC and PR curves for each individual seed run.
+- The test results of each random run and the mean results across all seed runs, saved in the `final_test_results.json` file.
+- The ROC and PR curves for each individual seed run.
 * Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
   
 **Note:** We provide the `checkpoint_model.ckpt` and `hyperparameters.json` files for the best model, saved in the `Test_Resources` directory, to ensure reproducibility when testing the model.
