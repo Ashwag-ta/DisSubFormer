@@ -1,5 +1,5 @@
 # DisSubFormer Data
-The data used in DisSubFormer are divided into two categories:
+The DisSubFormer data are provided in two forms:
 
 ---
 
