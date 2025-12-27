@@ -4,19 +4,17 @@ The data used in DisSubFormer are divided into two categories:
 ---
 
 ## 1- Preprocessed Data (Required)
-These files are **directly used by DisSubFormer** during training and testing.
-They have been preprocessed by the authors and include graph structures, embeddings, and precomputed graph matrices required for biologically informed anchor patch sampling and multi-head attention.
+This preprocessed data is used by DisSubFormer during training and testing.
+It has been preprocessed by the authors and includes graph structures, embeddings, and precomputed graph matrices required for biologically informed anchor patch sampling and multi-head attention.
 
 **Download the preprocessed data from:**
 [Dropbox – DisSubFormer preprocessed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0)
 
-After downloading, place all files directly under:
+After downloading, place the data contents directly under:
 
 ```text
 Data_Results/Data/
 ```
-
-**Note:** The Dropbox package already includes the precomputed graph metrics and protein node embeddings required to run DisSubFormer.
 
 ### Included Preprocessed Data
 
@@ -35,14 +33,12 @@ Provides precomputed node features for the GO_FS graph. Each row contains a gene
 * Subgraphs.pth
 Stores disease-specific subgraphs derived from disease-gene associations. Each subgraph represents one of 299 diseases including the set of associated genes.
 
-* Additional files
+* Additional data
 Includes precomputed files such as adjacency matrices and similarity scores that support anchor patch sampling and multi-head attention computations used during DisSubFormer training and testing.
 
 
 ## 2- Raw Data (Reference Only)
-Raw datasets used to generate the preprocessed data are provided for reference, transparency, and reproducibility and are stored in: `Data_Results/Data/raw_data/`.
-
-These raw files are not used directly by the DisSubFormer training/testing code.
+Raw data used to generate the preprocessed data are provided for reference, transparency, and reproducibility and are stored in: `Data_Results/Data/raw_data/`.
 
 ### Included Raw Data Sources
 * Disease–gene associations
@@ -62,7 +58,7 @@ Science, 347(6224), 1257601. https://doi.org/10.1126/science.1257601
 Briefings in Bioinformatics, 23(2), bbac003. https://doi.org/10.1093/bib/bbac003
 
 
-**Important:**  DisSubFormer expects the preprocessed dataset. The files in `raw_data/` are provided for reference and are not sufficient to run training/testing.
+**Important:** DisSubFormer expects the preprocessed data. The files in `raw_data/` are provided for reference and are not sufficient to run training/testing.
 
 
 
