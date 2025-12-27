@@ -18,7 +18,7 @@ conda env create --file DisSubFormer_env.yml
 # Prepare DisSubFormer Input Data
 * Download the preprocessed data from [Dropbox – DisSubFormer processed data](https://www.dropbox.com/scl/fo/z1zpdlxcm8ntdjet39xtb/ALnL4Kusqy_16XNJbu4hvcg?rlkey=zdl3vaky2gq76ioq4sctb0oxx&st=vo0jax9h&dl=0) and place the contents under `Data_Results/Data/`.  
   See the [Data README](Data_Results/Data/README.md) for details about processed and raw data.
-* Set `PROJECT_ROOT` in `main_config.py` to the path where the data files are downloaded.
+* Set `PROJECT_ROOT` in `main_config.py` to your local `Data_Results` path.
 * (Optional) Precompute graph metrics needed for anchor patch sampling and multi-head attention computations:
 ```bash
 python precompute_graph_metrics.py
