@@ -62,7 +62,7 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 * The ROC and PR curves for each individual seed run.
 * Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
   
-Note: We provide the checkpoint_model.ckpt and hyperparameters.json files for the best model, saved in the Test_Resources directory, to ensure reproducibility when testing the model.
+**Note:** We provide the checkpoint_model.ckpt and hyperparameters.json files for the best model, saved in the Test_Resources directory, to ensure reproducibility when testing the model.
 
 
 
