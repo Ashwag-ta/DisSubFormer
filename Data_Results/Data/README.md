@@ -19,7 +19,7 @@ Data_Results/Data/
 
 **Note:** The Dropbox package already includes the precomputed graph metrics and protein node embeddings required to run DisSubFormer.
 
-### Included Preprocessed Files
+### Included Preprocessed Data
 
 * DDI_RR0.txt
 Contains a list of comorbid disease pairs in edge list format. Each line represents a pair of diseases identified as comorbid based on a relative risk (RR) score greater than 0.
@@ -53,7 +53,7 @@ These raw files are not used directly by the DisSubFormer training/testing code.
 * Disease pairs
 * GO annotations
 
-## Original Data Sources
+### Original Data Sources
 The raw data originate from the following publications:
 
 * Menche, J., et al. (2015). Uncovering disease–disease relationships through the incomplete interactome.
