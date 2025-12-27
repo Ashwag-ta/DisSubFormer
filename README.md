@@ -10,7 +10,7 @@ To use DisSubFormer, follow these steps:
 
 
 # Install the Environment
-We provide a .yml file that includes all the required packages for training DisSubFormer. After installing Conda, you can create the environment using the following command:
+We provide a .yml file that includes all the required packages for training DisSubFormer. After installing [Conda](https://www.anaconda.com/docs/getting-started/anaconda/install), you can create the environment using the following command:
 ```bash
 conda env create --file DisSubFormer_env.yml
 ```
