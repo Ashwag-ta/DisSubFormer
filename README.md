@@ -50,7 +50,7 @@ python train_fixed_model.py --train_config_file train_config_fixed.json
 ## Evaluate DisSubFormer
 To test the trained DisSubFormer model using multiple random seed runs:
 
-1. Save the checkpoint_model.ckpt and hyperparameters.json files for the best model from the `Train_Results` directory to the initialized `Test_Resources` directory.
+1. Save the `checkpoint_model.ckpt` and hyperparameters.json files for the best model from the `Train_Results` directory to the initialized `Test_Resources` directory.
 
 2. Run the following command:
 ```bash
@@ -62,7 +62,7 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 * The ROC and PR curves for each individual seed run.
 * Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
   
-**Note:** We provide the checkpoint_model.ckpt and hyperparameters.json files for the best model, saved in the `Test_Resources` directory, to ensure reproducibility when testing the model.
+**Note:** We provide the `checkpoint_model.ckpt` and `hyperparameters.json` files for the best model, saved in the `Test_Resources` directory, to ensure reproducibility when testing the model.
 
 
 
