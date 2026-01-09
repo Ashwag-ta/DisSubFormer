@@ -36,11 +36,11 @@
         },
         "n_layers": {
             "type" : "suggest_int",
-            "args" : [1,2]
+            "args" : [1,3]
         },
         "neigh_sample_global_size" : {
             "type" : "suggest_int",
-            "args" : [1,2]
+            "args" : [1,3]
         },
         "n_anchor_patches_pos_in": {
             "type" : "suggest_int",
