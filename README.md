@@ -60,7 +60,7 @@ python test_model.py --model_file checkpoint_model.ckpt --test_config_file hyper
 3. The test results will be saved in the `Test_Results` directory and will include:
 - The test results of each run and the mean results across all runs, saved in the `final_test_results.json` file.
 - The ROC and PR curves for each individual run.
-- Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual seed run curves.
+- Summary ROC and PR curves aggregating all runs, including the mean ROC and PR curves along with individual run curves.
   
 **Note:** We provide the `checkpoint_model.ckpt` and `hyperparameters.json` files for an example trained model in `Test_Resources` to enable testing without training and ensure reproducibility.
 
