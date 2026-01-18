@@ -24,11 +24,11 @@ Contains a list of comorbid disease pairs in edge list format. Each line represe
 
 * PPI.txt
   
-Represents the Protein-Protein Interaction (PPI) network as an undirected edge list. Each line specifies an interaction between two proteins.
+Represents the Protein-Protein Interaction (PPI) graph as an undirected edge list. Each line specifies an interaction between two proteins.
 
 * GO_FS.txt
   
-Encodes a protein similarity graph constructed from Gene Ontology (GO)-based functional similarity. Edges connect protein pairs with functional similarity scores greater than 0.5, indicating the edge weights.
+Encodes a protein similarity graph constructed from Gene Ontology (GO)-based functional similarity. Undirected edges connect protein pairs with functional similarity scores > 0.5, and edge weights equal the similarity scores.
 
 * GO_FS_node_features_ANC2VEC.csv
   
