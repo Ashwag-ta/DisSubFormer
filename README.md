@@ -48,7 +48,7 @@ python train_fixed_model.py --train_config_file train_config_fixed.json
 
 
 ## Test DisSubFormer
-To test DisSubFormer over ten runs on the disease comorbidity prediction task and reproduce the reported experimental results and figures in the manuscript:
+To test DisSubFormer over ten runs on the disease comorbidity prediction task and reproduce the reported experimental results and figures:
 
 1. Copy the `checkpoint_model.ckpt` and `hyperparameters.json` files for the trained model from `Train_Results` to `Test_Resources` (or use the provided example files already in `Test_Resources`).
 
